@@ -50,10 +50,10 @@ const FlavourShowcase = () => {
           transition={{ duration: 0.6 }}
         >
           <span className="text-accent text-xs font-medium tracking-wider uppercase">Our Menu</span>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mt-2 text-foreground">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mt-2 text-[#2d2d2d]">
             Explore Our <span className="text-gold-gradient">Flavours</span>
           </h2>
-          <p className="text-muted-foreground mt-3 max-w-lg mx-auto text-sm">
+          <p className="text-[#555] mt-3 max-w-lg mx-auto text-sm">
             From rich chocolate indulgence to fresh fruit delights — find your perfect cake.
           </p>
         </motion.div>
@@ -100,30 +100,30 @@ const FlavourShowcase = () => {
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
             >
               {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-white flex justify-center items-center py-4">
+              <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                 <img
                   src={flavour.image}
                   alt={flavour.name}
-                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
+                  className="w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
 
               {/* Info */}
-              <div className="p-5 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="font-heading font-semibold text-lg text-foreground pr-2">
+              <div className="p-4 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-1.5">
+                  <h3 className="font-heading font-semibold text-base text-foreground pr-2">
                     {flavour.name}
                   </h3>
-                  <span className="text-accent font-bold mt-1">₹499</span>
+                  <span className="text-accent font-bold mt-0.5 text-sm">₹499</span>
                 </div>
 
-                <p className="text-muted-foreground text-sm mb-5 line-clamp-2">
+                <p className="text-muted-foreground text-xs mb-4 line-clamp-2">
                   Premium {flavour.name.toLowerCase()} cake crafted with the finest ingredients and authentic flavours.
                 </p>
 
-                <div className="mt-auto w-full bg-[#cca64b] hover:bg-[#b5923f] text-white py-2.5 rounded-xl font-medium text-sm transition-colors flex justify-center items-center gap-2 shadow-sm">
-                  <ShoppingBag size={16} />
+                <div className="mt-auto w-full bg-[#cca64b] hover:bg-[#b5923f] text-white py-1.5 rounded-lg font-medium text-xs transition-colors flex justify-center items-center gap-1.5 shadow-sm">
+                  <ShoppingBag size={14} />
                   <span>Order Now</span>
                 </div>
               </div>
