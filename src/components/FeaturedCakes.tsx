@@ -37,14 +37,14 @@ const FeaturedCakes = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
           {categories.map((cat, i) => (
             <motion.a
               key={cat.title}
               href={`${WHATSAPP_BASE}Hi, I'm interested in ${encodeURIComponent(cat.title)}.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative rounded-xl overflow-hidden aspect-[4/3] card-luxury"
+              className="group relative rounded-xl overflow-hidden aspect-square card-luxury max-w-[240px] mx-auto w-full"
               initial={{ opacity: 0, y: 40, rotateX: 5 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true, margin: "-60px" }}

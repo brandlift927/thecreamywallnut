@@ -40,13 +40,11 @@ const CakeGallery = () => {
         </motion.div>
 
         {/* Masonry-style grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-4xl mx-auto">
           {images.map((img, i) => (
             <motion.div
               key={img.label}
-              className={`relative group cursor-pointer rounded-xl overflow-hidden ${
-                i === 0 || i === 5 ? "row-span-2 aspect-[3/4]" : "aspect-square"
-              }`}
+              className="relative group cursor-pointer rounded-xl overflow-hidden aspect-square w-[calc(50%-6px)] md:w-[calc(33.333%-11px)] max-w-[220px]"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-40px" }}
@@ -96,7 +94,7 @@ const CakeGallery = () => {
             <motion.img
               src={images[selected].src}
               alt={images[selected].label}
-              className="max-w-full max-h-[80vh] rounded-2xl shadow-2xl object-contain"
+              className="max-w-[90vw] md:max-w-2xl max-h-[70vh] rounded-2xl shadow-2xl object-contain bg-muted p-2 md:p-4"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
