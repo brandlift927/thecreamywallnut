@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FlavourShowcase from "@/components/FlavourShowcase";
+import OurStory from "@/components/OurStory";
 import FeaturedCakes from "@/components/FeaturedCakes";
-import CakeGallery from "@/components/CakeGallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactSection from "@/components/ContactSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -14,8 +14,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <FlavourShowcase />
+      <OurStory />
       <FeaturedCakes />
-      <CakeGallery />
       <WhyChooseUs />
       <ContactSection />
       <Footer />

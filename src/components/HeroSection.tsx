@@ -25,6 +25,7 @@ const HeroSection = () => {
           initial={{ scale: 1.15 }}
           animate={{ scale: 1 }}
           transition={{ duration: 2, ease: "easeOut" }}
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-transparent" />
