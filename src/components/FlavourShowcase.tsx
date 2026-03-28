@@ -132,11 +132,11 @@ const FlavourShowcase = () => {
                 className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col border border-border/50"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
-                <div className="relative aspect-square overflow-hidden bg-white p-2">
+                <div className="relative aspect-square overflow-hidden bg-white">
                   <img
                     src={cake.image}
                     alt={cake.name}
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
@@ -212,11 +212,11 @@ const FlavourShowcase = () => {
                 className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col border border-border/50"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
-                <div className="relative aspect-square overflow-hidden bg-white p-2">
+                <div className="relative aspect-square overflow-hidden bg-white">
                   <img
                     src={pastry.image}
                     alt={pastry.name}
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
