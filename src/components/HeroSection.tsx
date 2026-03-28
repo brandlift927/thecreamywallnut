@@ -73,23 +73,23 @@ const HeroSection = () => {
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <span className="w-8 sm:w-12 h-px bg-accent/40" />
+          <span className="w-5 sm:w-12 h-px bg-accent/40" />
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           >
             <Cake className="w-4 h-4 text-accent/60" />
           </motion.div>
-          <span className="w-8 sm:w-12 h-px bg-accent/40" />
+          <span className="w-5 sm:w-12 h-px bg-accent/40" />
         </motion.div>
 
         <motion.h1
-          className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-foreground mb-4"
+          className="font-heading text-5xl sm:text-7xl md:text-8xl font-bold leading-[1] text-foreground mb-4"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
         >
-          The Creamy
+          <span className="whitespace-nowrap">The Creamy</span>
           <br />
           <motion.span
             className="text-gold-gradient inline-block"
@@ -116,8 +116,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.0 }}
         >
-          Freshly baked happiness for every celebration. Premium cakes crafted
-          with love and the finest ingredients.
+          Freshly baked happiness for every celebration.
         </motion.p>
 
         <motion.div
@@ -128,7 +127,7 @@ const HeroSection = () => {
         >
           <motion.a
             href="#flavours"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-7 py-3 rounded-full font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-all duration-300 gold-glow gold-glow-hover"
+            className="w-[85%] max-w-[280px] sm:w-auto inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider hover:opacity-90 transition-all duration-300 gold-glow gold-glow-hover"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
           >
@@ -139,7 +138,7 @@ const HeroSection = () => {
             href="https://wa.me/919762632539?text=Hi%20The%20Creamy%20Walnut,%20I%20want%20to%20order%20a%20cake."
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-accent/40 text-accent px-7 py-3 rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-accent/10 transition-all duration-300"
+            className="w-[85%] max-w-[280px] sm:w-auto inline-flex items-center justify-center gap-2 border border-accent/40 text-accent px-5 py-2.5 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider hover:bg-accent/10 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
           >

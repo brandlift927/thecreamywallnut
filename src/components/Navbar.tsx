@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2.5">
             <Cake className="w-6 h-6 text-accent" />
-            <span className="font-heading text-base md:text-lg font-bold text-foreground tracking-wide">
+            <span className="font-heading text-lg md:text-xl font-bold text-gold-gradient tracking-tight italic drop-shadow-sm">
               The Creamy Walnut
             </span>
           </a>

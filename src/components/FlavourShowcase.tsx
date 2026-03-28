@@ -161,7 +161,7 @@ const FlavourShowcase = () => {
         </div>
 
         {/* Customized Cakes Gallery Section */}
-        <div className="mb-12">
+        <div id="gallery" className="mb-12 scroll-mt-24">
           <div className="flex items-center gap-2 mb-6 border-b border-[#2d2d2d]/10 pb-3">
             <span className="text-xl">✨</span>
             <h3 className="font-heading text-xl md:text-2xl font-bold text-[#2d2d2d]">Customized Cakes Gallery</h3>
