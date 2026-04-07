@@ -3,6 +3,7 @@ import designerCake from "@/assets/designer-cake.png";
 import birthdayCake from "@/assets/birthday-cake.png";
 import anniversaryCake from "@/assets/anniversary-cake.png";
 import customCake from "@/assets/custom-cake.png";
+import OptimizedImage from "./ui/OptimizedImage";
 
 const categories = [
   { title: "Designer Cakes", subtitle: "Artistic Masterpieces", image: designerCake },
@@ -51,11 +52,10 @@ const FeaturedCakes = () => {
               transition={{ duration: 0.6, delay: i * 0.12 }}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
             >
-              <motion.img
+              <OptimizedImage
                 src={cat.image}
                 alt={cat.title}
-                className="w-full h-full object-cover"
-                loading="lazy"
+                className="w-full h-full"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.7 }}
               />

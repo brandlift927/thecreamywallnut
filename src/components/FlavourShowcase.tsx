@@ -1,5 +1,6 @@
 import { ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
+import OptimizedImage from "./ui/OptimizedImage";
 
 // Import images
 import img1 from "@/assets/new_images/IMG20260308114828compresed.jpg";
@@ -65,28 +66,28 @@ const customizedGallery = [
 ];
 
 const cakeFlavours = [
-  { name: "KitKat Cake", image: kitkat, price: "₹480", desc: "650 gm – Decorated with crunchy KitKat" },
-  { name: "Lychee Gulkand", image: lychee_gulkand, price: "₹370", desc: "600 gm – Sweet lychee and traditional gulkand" },
-  { name: "Rasmalai Cake", image: rasmalai, price: "₹450", desc: "600 gm – Traditional Indian sweet rasmalai infused cake" },
-  { name: "Strawberry Banana", image: strawberry_banana, price: "₹370", desc: "600 gm – Perfect blend of strawberry and banana" },
-  { name: "Truffle Chocolate", image: truffle_chocolate, price: "₹500", desc: "650 gm – Decadent truffle chocolate cake" },
+  { name: "KitKat Cake", image: kitkat, price: "₹530", desc: "650 gm – Decorated with crunchy KitKat" },
+  { name: "Lychee Gulkand", image: lychee_gulkand, price: "₹420", desc: "600 gm – Sweet lychee and traditional gulkand" },
+  { name: "Rasmalai Cake", image: rasmalai, price: "₹500", desc: "600 gm – Traditional Indian sweet rasmalai infused cake" },
+  { name: "Strawberry Banana", image: strawberry_banana, price: "₹420", desc: "600 gm – Perfect blend of strawberry and banana" },
+  { name: "Truffle Chocolate", image: truffle_chocolate, price: "₹550", desc: "650 gm – Decadent truffle chocolate cake" },
   { name: "Speciality Cake", image: special_cake, price: "Price on Request", desc: "Delicious chef's special cake" },
   { name: "Belgium Chocolate", image: belgium_chocolate, price: "Price on Request", desc: "600 gm – Rich premium chocolate" },
-  { name: "Black Forest", image: black_forest, price: "₹350", desc: "600 gm – Classic black forest" },
-  { name: "Choco Chips", image: choco_chips, price: "₹400", desc: "600 gm – Loaded with chocolate chips" },
-  { name: "Delight Chocolate", image: delight_chocolate, price: "₹300 / ₹400", desc: "350 gm / 550 gm – Irresistible double delight chocolate" },
-  { name: "Vanilla Dry Fruit", image: img1, price: "₹270", desc: "350 gm – Rich vanilla sponge loaded with premium dry fruits" },
-  { name: "Gulkand Cake", image: img2, price: "₹270", desc: "350 gm – Exquisite rose petal preserve infused cake" },
-  { name: "Mango Cake", image: img3, price: "₹250", desc: "350 gm – Fresh and pulpy mango flavour in every bite" },
-  { name: "Chocolate Kiwi", image: img4, price: "₹250", desc: "350 gm – Unique blend of rich chocolate and zesty kiwi" },
-  { name: "Cassata", image: img5, price: "₹350", desc: "500 gm – Traditional multi-layered ice cream style cake" },
-  { name: "Raspberry", image: img6, price: "₹270", desc: "350 gm – Sweet and tangy raspberry delight" },
-  { name: "Kulfi Falooda", image: img7, price: "₹250", desc: "350 gm – Fusion cake with traditional kulfi and falooda flavours" },
-  { name: "Mango Coffee", image: img8, price: "₹270", desc: "350 gm – Tropical mango combined with a hint of coffee" },
-  { name: "Red Velvet", image: img9, price: "₹300 / ₹450", desc: "350/600 gm – Classic velvet texture with creamy frosting" },
-  { name: "Anjeer (Fig Cake)", image: img10, price: "₹270", desc: "350 gm – Nature's sweetness with premium figs" },
-  { name: "Crunchy Chocolate", image: img11, price: "₹400", desc: "600 gm – Densely rich chocolate with a satisfying crunch" },
-  { name: "Mixed Fruits", image: img13, price: "₹350", desc: "600 gm – Abundance of fresh seasonal fruits on a light sponge" },
+  { name: "Black Forest", image: black_forest, price: "₹400", desc: "600 gm – Classic black forest" },
+  { name: "Choco Chips", image: choco_chips, price: "₹450", desc: "600 gm – Loaded with chocolate chips" },
+  { name: "Delight Chocolate", image: delight_chocolate, price: "₹350 / ₹450", desc: "350 gm / 550 gm – Irresistible double delight chocolate" },
+  { name: "Vanilla Dry Fruit", image: img1, price: "₹320", desc: "350 gm – Rich vanilla sponge loaded with premium dry fruits" },
+  { name: "Gulkand Cake", image: img2, price: "₹320", desc: "350 gm – Exquisite rose petal preserve infused cake" },
+  { name: "Mango Cake", image: img3, price: "₹300", desc: "350 gm – Fresh and pulpy mango flavour in every bite" },
+  { name: "Chocolate Kiwi", image: img4, price: "₹300", desc: "350 gm – Unique blend of rich chocolate and zesty kiwi" },
+  { name: "Cassata", image: img5, price: "₹400", desc: "500 gm – Traditional multi-layered ice cream style cake" },
+  { name: "Raspberry", image: img6, price: "₹320", desc: "350 gm – Sweet and tangy raspberry delight" },
+  { name: "Kulfi Falooda", image: img7, price: "₹300", desc: "350 gm – Fusion cake with traditional kulfi and falooda flavours" },
+  { name: "Mango Coffee", image: img8, price: "₹320", desc: "350 gm – Tropical mango combined with a hint of coffee" },
+  { name: "Red Velvet", image: img9, price: "₹350 / ₹500", desc: "350/600 gm – Classic velvet texture with creamy frosting" },
+  { name: "Anjeer (Fig Cake)", image: img10, price: "₹320", desc: "350 gm – Nature's sweetness with premium figs" },
+  { name: "Crunchy Chocolate", image: img11, price: "₹450", desc: "600 gm – Densely rich chocolate with a satisfying crunch" },
+  { name: "Mixed Fruits", image: img13, price: "₹400", desc: "600 gm – Abundance of fresh seasonal fruits on a light sponge" },
 ];
 
 const pastryFlavours = [
@@ -104,6 +105,35 @@ const FlavourShowcase = () => {
   return (
     <section id="flavours" className="section-padding bg-[#faf9f6]">
       <div className="max-w-6xl mx-auto">
+        {/* Announcement Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-14 rounded-3xl overflow-hidden shadow-2xl border border-[#cca64b]/30 bg-white relative"
+        >
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#cca64b] via-[#e2c17d] to-[#cca64b]"></div>
+          <div className="px-8 py-10 md:py-14 text-center bg-gradient-to-b from-white to-[#faf9f6]">
+            <h2 className="font-heading font-black tracking-tighter text-[#2d2d2d] uppercase leading-none mb-8 flex flex-col md:flex-row items-center md:items-baseline justify-center gap-2 md:gap-4">
+              <span className="text-6xl md:text-8xl">FREE</span>
+              <span className="text-lg md:text-3xl text-gold-gradient tracking-widest">HOME DELIVERY</span>
+            </h2>
+            <div className="w-24 h-1 bg-[#cca64b]/30 mx-auto mb-8 rounded-full"></div>
+            <div className="space-y-4">
+              <p className="text-[#2d2d2d] text-xl md:text-3xl font-bold max-w-4xl mx-auto leading-tight">
+                Use code <span className="inline-block bg-[#cca64b] text-white px-4 py-1.5 rounded-xl shadow-md transform -rotate-1 hover:rotate-0 transition-transform duration-300">CREAMY X</span>
+                <span className="mx-2">and get</span>
+                <span className="text-secondary underline decoration-[#cca64b] decoration-4 underline-offset-4 font-black">10% DISCOUNT</span>
+                <span className="ml-2">on all cakes</span>
+              </p>
+              <p className="text-secondary/40 text-sm md:text-base uppercase tracking-[0.2em] font-bold pt-2">
+                — code offer valid only for shop visitors —
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Header */}
         <div className="text-center mb-8 md:mb-12">
           <span className="text-secondary text-xs font-medium tracking-wider uppercase opacity-70">Our Menu</span>
@@ -121,7 +151,7 @@ const FlavourShowcase = () => {
             <span className="text-xl">🎂</span>
             <h3 className="font-heading text-xl md:text-2xl font-bold text-[#2d2d2d]">Delicious Cakes</h3>
           </div>
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {cakeFlavours.map((cake, i) => (
               <motion.a
@@ -133,11 +163,11 @@ const FlavourShowcase = () => {
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
                 <div className="relative aspect-square overflow-hidden bg-white">
-                  <img
+                  <OptimizedImage
                     src={cake.image}
                     alt={cake.name}
-                    className="w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
+                    className="w-full h-full"
+                    aspectRatio="square"
                   />
                 </div>
                 <div className="p-4 flex flex-col flex-1 bg-card">
@@ -178,11 +208,11 @@ const FlavourShowcase = () => {
                 className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group cursor-pointer block border border-border/10 aspect-square bg-white"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
-                <img
+                <OptimizedImage
                   src={imgSrc}
                   alt={`Customized Cake ${i + 1}`}
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
+                  className="w-full h-full p-2 group-hover:scale-105"
+                  aspectRatio="square"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="bg-white/95 text-[#2d2d2d] px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 transform translate-y-3 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
@@ -213,11 +243,11 @@ const FlavourShowcase = () => {
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
                 <div className="relative aspect-square overflow-hidden bg-white">
-                  <img
+                  <OptimizedImage
                     src={pastry.image}
                     alt={pastry.name}
-                    className="w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
+                    className="w-full h-full"
+                    aspectRatio="square"
                   />
                 </div>
                 <div className="p-4 flex flex-col flex-1 bg-card">

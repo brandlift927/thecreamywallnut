@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import shopFront from "@/assets/new_images/TWC_FINAL.jpg";
+import OptimizedImage from "./ui/OptimizedImage";
 
 const OurStory = () => {
   return (
@@ -14,13 +15,13 @@ const OurStory = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-[300px] sm:h-[400px] md:h-[450px] bg-[#faf9f6]/50 flex items-center justify-center border border-border/20">
-              <img 
+            <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-auto max-h-[500px] md:max-h-[600px] flex items-center justify-center border border-border/20">
+              <OptimizedImage 
                 src={shopFront} 
                 alt="The Creamy Walnut Shop" 
-                className="w-full h-full object-contain p-2"
-                loading="lazy"
-                decoding="async"
+                className="w-full h-full"
+                aspectRatio="auto"
+                objectFit="contain"
               />
             </div>
           </motion.div>
