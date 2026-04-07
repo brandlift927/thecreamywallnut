@@ -136,7 +136,6 @@ const FlavourShowcase = () => {
 
         {/* Header */}
         <div className="text-center mb-8 md:mb-12">
-          <span className="text-secondary text-xs font-medium tracking-wider uppercase opacity-70">Our Menu</span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mt-2 text-[#2d2d2d]">
             Our <span className="text-gold-gradient">Menu</span>
           </h2>
