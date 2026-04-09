@@ -1,4 +1,5 @@
 import { MessageCircle } from "lucide-react";
+import { incrementOrderCount } from "@/lib/orderCounter";
 
 const WHATSAPP_URL =
   "https://wa.me/919762632539?text=Hi%20The%20Creamy%20Walnut,%20I%20want%20to%20order%20a%20cake.";
@@ -9,6 +10,7 @@ const WhatsAppButton = () => {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => incrementOrderCount()}
       className="fixed bottom-6 right-6 z-50 flex w-14 h-14 md:w-16 md:h-16 rounded-full bg-[hsl(142,70%,45%)] items-center justify-center shadow-2xl animate-pulse-glow hover:scale-110 transition-transform duration-300 group"
       aria-label="Order on WhatsApp"
     >

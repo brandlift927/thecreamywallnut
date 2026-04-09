@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import heroCake from "@/assets/hero-cake.png";
 import OptimizedImage from "./ui/OptimizedImage";
+import { incrementOrderCount } from "@/lib/orderCounter";
 
 const HeroSection = () => {
   const ref = useRef<HTMLElement>(null);
@@ -139,6 +140,7 @@ const HeroSection = () => {
             href="https://wa.me/919762632539?text=Hi%20The%20Creamy%20Walnut,%20I%20want%20to%20order%20a%20cake."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => incrementOrderCount()}
             className="w-[85%] max-w-[280px] sm:w-auto inline-flex items-center justify-center gap-2 border border-accent/40 text-accent px-5 py-2.5 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider hover:bg-accent/10 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}

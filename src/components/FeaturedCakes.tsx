@@ -4,6 +4,7 @@ import birthdayCake from "@/assets/birthday-cake.png";
 import anniversaryCake from "@/assets/anniversary-cake.png";
 import customCake from "@/assets/custom-cake.png";
 import OptimizedImage from "./ui/OptimizedImage";
+import { incrementOrderCount } from "@/lib/orderCounter";
 
 const categories = [
   { title: "Designer Cakes", subtitle: "Artistic Masterpieces", image: designerCake },
@@ -45,6 +46,7 @@ const FeaturedCakes = () => {
               href={`${WHATSAPP_BASE}Hi, I'm interested in ${encodeURIComponent(cat.title)}.`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => incrementOrderCount()}
               className="group relative rounded-xl overflow-hidden aspect-square card-luxury max-w-[240px] mx-auto w-full"
               initial={{ opacity: 0, y: 40, rotateX: 5 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}

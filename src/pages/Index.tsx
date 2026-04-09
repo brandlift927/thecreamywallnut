@@ -5,6 +5,7 @@ import OurStory from "@/components/OurStory";
 import FeaturedCakes from "@/components/FeaturedCakes";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactSection from "@/components/ContactSection";
+import OrdersCounter from "@/components/OrdersCounter";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <FeaturedCakes />
       <WhyChooseUs />
       <ContactSection />
+      <OrdersCounter />
       <Footer />
       <WhatsAppButton />
     </div>

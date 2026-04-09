@@ -1,6 +1,7 @@
 import { ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
 import OptimizedImage from "./ui/OptimizedImage";
+import { incrementOrderCount } from "@/lib/orderCounter";
 
 // Import images
 import img1 from "@/assets/new_images/IMG20260308114828compresed.jpg";
@@ -158,6 +159,7 @@ const FlavourShowcase = () => {
                 href={`${WHATSAPP_BASE}Hi, I want to order ${encodeURIComponent(cake.name)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => incrementOrderCount()}
                 className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col border border-border/50"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
@@ -204,6 +206,7 @@ const FlavourShowcase = () => {
                 href={`${WHATSAPP_BASE}Hi, I want to inquire about a customized cake.`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => incrementOrderCount()}
                 className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group cursor-pointer block border border-border/10 aspect-square bg-white"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
@@ -238,6 +241,7 @@ const FlavourShowcase = () => {
                 href={`${WHATSAPP_BASE}Hi, I want to order ${encodeURIComponent(pastry.name)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => incrementOrderCount()}
                 className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col border border-border/50"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
