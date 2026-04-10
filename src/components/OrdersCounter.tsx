@@ -81,9 +81,9 @@ const OrdersCounter = () => {
           whileHover={{ y: -5, transition: { duration: 0.3 } }}
         >
           {/* Subtle drop shadow ring floating behind */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-36 bg-accent/20 blur-2xl rounded-3xl mix-blend-screen" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-36 bg-accent/20 blur-2xl rounded-3xl mix-blend-screen" />
 
-          <div className="group relative flex flex-col items-center justify-center bg-gradient-to-b from-[#2a2d2a]/80 to-[#1a1c1a]/95 backdrop-blur-xl border border-accent/40 w-32 h-44 rounded-[2rem] shadow-[0_10px_40px_-10px_rgba(204,166,75,0.4)] overflow-hidden">
+          <div className="group relative flex flex-col items-center justify-center bg-gradient-to-b from-[#2a2d2a]/80 to-[#1a1c1a]/95 backdrop-blur-xl border border-accent/40 w-44 h-44 rounded-[2rem] shadow-[0_10px_40px_-10px_rgba(204,166,75,0.4)] overflow-hidden">
             
             {/* Elegant Inner Glows */}
             <div className="absolute -top-10 -left-10 w-28 h-28 bg-accent/30 rounded-full blur-[30px] group-hover:bg-accent/40 transition-colors duration-500" />
@@ -104,10 +104,10 @@ const OrdersCounter = () => {
 
             {/* Gorgeous Digit with Gold Gradient */}
             <div 
-              className="relative z-10 text-[6rem] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-[#fef3c7] via-[#cca64b] to-[#99772d] drop-shadow-xl"
+              className="relative z-10 text-[4rem] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-[#fef3c7] via-[#cca64b] to-[#99772d] drop-shadow-xl"
               style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
             >
-              <AnimatedNumber value={count} />
+              <AnimatedNumber value={count + 278} />
             </div>
             
           </div>
