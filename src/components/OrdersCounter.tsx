@@ -24,10 +24,22 @@ function AnimatedNumber({ value }: { value: number }) {
 }
 
 const OrdersCounter = () => {
-  const [count, setCount] = useState(getOrderCount);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const handler = () => setCount(getOrderCount());
+    // Initial fetch
+    getOrderCount().then(setCount);
+
+    // Listen for global updates
+    const handler = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail !== undefined) {
+        setCount(customEvent.detail);
+      } else {
+        getOrderCount().then(setCount);
+      }
+    };
+
     window.addEventListener("tcw-whatsapp-click", handler);
     return () => window.removeEventListener("tcw-whatsapp-click", handler);
   }, []);
